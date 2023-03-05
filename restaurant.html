@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    
+
+<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+<link rel="stylesheet" href="./css/swiper-restaurant.css" />
+
+    <script type="module" crossorigin src="/team-test/assets/swiper-restaurant-4bc168dd.js"></script>
+    <link rel="stylesheet" href="/team-test/assets/styles-763f9727.css">
+  </head>
+  <body>
+    <header class="section header-section">
+  <div class="container header-container">
+    <nav class="header-nav">
+      <ul class="site-nav">
+        <li><a class="site-nav-link curent" href="./index.html">Home</a></li>
+        <li><a class="site-nav-link" href="./hotel.html">Hotel</a></li>
+        <li>
+          <a class="site-nav-link" href="./restaurant.html">Restaurant</a>
+        </li>
+      </ul>
+    </nav>
+    <a href="./index.html" class="header-logo"
+      >MIMINO
+      <span class="logo-txt">restaurant-hotel complex</span>
+    </a>
+    <nav class="social-nav">
+      <ul class="social-items">
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://www.instagram.com"
+            aria-label="instagram"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M14.1665 1.66602H5.83317C3.53198 1.66602 1.6665 3.5315 1.6665 5.83268V14.166C1.6665 16.4672 3.53198 18.3327 5.83317 18.3327H14.1665C16.4677 18.3327 18.3332 16.4672 18.3332 14.166V5.83268C18.3332 3.5315 16.4677 1.66602 14.1665 1.66602Z"
+                stroke="#F7F7F7"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13.3333 9.47525C13.4361 10.1688 13.3176 10.8771 12.9947 11.4994C12.6718 12.1218 12.1609 12.6264 11.5346 12.9416C10.9083 13.2569 10.1986 13.3666 9.50641 13.2552C8.81419 13.1438 8.17472 12.817 7.67895 12.3212C7.18318 11.8255 6.85636 11.186 6.74497 10.4938C6.63359 9.80154 6.74331 9.09183 7.05852 8.46556C7.37374 7.8393 7.87841 7.32837 8.50074 7.00545C9.12307 6.68254 9.83138 6.56407 10.5249 6.66692C11.2324 6.77182 11.8873 7.10147 12.393 7.60717C12.8987 8.11288 13.2283 8.76782 13.3333 9.47525Z"
+                stroke="#F7F7F7"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14.5835 5.41602H14.5935"
+                stroke="#F7F7F7"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <!-- <svg class="social-icon">
+              <use href="./img/svg/instagram.svg"></use>
+            </svg> -->
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://www.facebook.com"
+            aria-label="facebook"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M15.0002 1.66602H12.5002C11.3951 1.66602 10.3353 2.105 9.55388 2.8864C8.77248 3.66781 8.3335 4.72761 8.3335 5.83268V8.33268H5.8335V11.666H8.3335V18.3327H11.6668V11.666H14.1668L15.0002 8.33268H11.6668V5.83268C11.6668 5.61167 11.7546 5.39971 11.9109 5.24343C12.0672 5.08715 12.2791 4.99935 12.5002 4.99935H15.0002V1.66602Z"
+                stroke="#F7F7F7"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <!-- <svg class="social-icon">
+              <use href="/src/img/svg/icons.svg#icon-instagram"></use>
+            </svg> -->
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://twitter.com"
+            aria-label="twitter"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M19.1668 2.50057C18.3688 3.06347 17.4853 3.49399 16.5502 3.77557C16.0483 3.19849 15.3813 2.78948 14.6394 2.60384C13.8974 2.4182 13.1164 2.4649 12.4019 2.73761C11.6874 3.01033 11.0739 3.4959 10.6443 4.12866C10.2148 4.76143 9.98991 5.51085 10.0002 6.27557V7.1089C8.53569 7.14687 7.08456 6.82208 5.776 6.16344C4.46745 5.5048 3.34209 4.53276 2.50016 3.3339C2.50016 3.3339 -0.83317 10.8339 6.66683 14.1672C4.9506 15.3322 2.90613 15.9163 0.833496 15.8339C8.3335 20.0006 17.5002 15.8339 17.5002 6.25057C17.4994 6.01845 17.4771 5.7869 17.4335 5.5589C18.284 4.72014 18.8842 3.66116 19.1668 2.50057Z"
+                stroke="#F7F7F7"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <!-- <svg class="social-icon">
+              <use href="../img/svg/twitter.svg"></use>
+            </svg> -->
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <button
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+    </button>
+  </div>
+</header>
+
+    <main>
+      <section class="section restaurant-hero-section">
+  <div class="container restaurant-hero-container">
+    <h1 class="title restaurant-hero-title">Restaurant</h1>
+    <ul class="restaurant-hero-btn-list">
+      <li>
+        <button class="btn btn-dark" type="button">book a table</button>
+      </li>
+      <li>
+        <button class="btn btn-dark" type="button">View a menu</button>
+      </li>
+    </ul>
+   
+<div class="rest-hero-wrapper">
+  <div>
+        <div class="rest-hero-list" >
+          <div class="rest-hero-item">
+             <picture>
+  
+            <source
+              srcset="/team-test/assets/image1_lg@1x-5b4610bb.jpg 1x, /team-test/assets/image1_lg@2x-ae02ad20.jpg 2x"
+              media="(min-width:1440px)"
+            />
+  
+            <source
+              srcset="/team-test/assets/image1_md@1x-4f828424.jpg 1x, /team-test/assets/image1_md@2x-340a017a.jpg 2x"
+              media="(min-width:768px)"
+            />
+  
+            <source
+              srcset="/team-test/assets/image1_sm@2x-a31d497c.jpg 2x"
+              media="(max-width:767px)"
+            />
+            <img
+              src="/team-test/assets/image1_sm@1x-4d981e47.jpg"
+              alt="Restaurant photo 1"
+              width="436"
+              loading="lazy"
+            />
+          </picture>
+          </div>
+          <div class="rest-hero-item">
+             <picture>
+                <source
+              srcset="/team-test/assets/image2_lg@1x-97a4baa4.jpg 1x, /team-test/assets/image2_lg@2x-e6f79b37.jpg 2x"
+              media="(min-width:1440px)"
+            />
+  
+            <source
+              srcset="/team-test/assets/image2_md@1x-63ec21e3.jpg 1x, /team-test/assets/image2_md@2x-41834e55.jpg 2x"
+              media="(min-width:768px)"
+            />
+                <source
+              srcset="/team-test/assets/image2_sm@2x-186205bf.jpg 2x"
+              media="(max-width:767px)"
+            />
+            <img
+              src="/team-test/assets/image2_sm@1x-bf8392b3.jpg"
+              alt="Restaurant photo 1"
+              width="436"
+              loading="lazy"
+            />
+          </picture>
+          </div>
+          <!-- <di>
+             <picture>
+  
+              <source
+              srcset="
+                img/restaurant/hero/desktop/image3_lg@1x.jpg 1x,
+                img/restaurant/hero/desktop/image3_lg@2x.jpg 2x
+              "
+              media="(min-width:1440px)"
+            />
+  
+            <source
+              srcset="
+                img/restaurant/hero/tablet/image3_md@1x.jpg 1x,
+                img/restaurant/hero/tablet/image3_md@2x.jpg 2x
+              "
+              media="(min-width:768px)"
+            />
+                <source
+              srcset="./img/restaurant/hero/mobile/image3_sm@2x.jpg 2x"
+              media="(max-width:767px)"
+            />
+            <img
+              src="./img/restaurant/hero/mobile/image3_sm@1x.jpg"
+              alt="Restaurant photo 1"
+              width="436"
+              loading="lazy"
+            />
+          </picture>
+          </di>
+          <div>
+            <picture>
+              <source
+              srcset="
+                img/restaurant/hero/desktop/image4_lg@1x.jpg 1x,
+                img/restaurant/hero/desktop/image4_lg@2x.jpg 2x
+              "
+              media="(min-width:1440px)"
+            />
+  
+            <source
+              srcset="
+                img/restaurant/hero/tablet/image4_md@1x.jpg 1x,
+                img/restaurant/hero/tablet/image4_md@2x.jpg 2x
+              "
+              media="(min-width:768px)"
+            />
+                <source
+              srcset="./img/restaurant/hero/mobile/image4_sm@2x.jpg 2x"
+              media="(max-width:767px)"
+            />
+            <img
+              src="./img/restaurant/hero/mobile/image4_sm@1x.jpg"
+              alt="Restaurant photo 1"
+              width="436"
+              loading="lazy"
+            />
+          </picture>
+          </div>
+          <di>
+             <picture>
+              <source
+              srcset="
+                img/restaurant/hero/desktop/image5_lg@1x.jpg 1x,
+                img/restaurant/hero/desktop/image5_lg@2x.jpg 2x
+              "
+              media="(min-width:1440px)"
+            />
+  
+            <source
+              srcset="
+                img/restaurant/hero/tablet/image5_md@1x.jpg 1x,
+                img/restaurant/hero/tablet/image5_md@2x.jpg 2x
+              "
+              media="(min-width:768px)"
+            />
+                <source
+              srcset="./img/restaurant/hero/mobile/image5_sm@2x.jpg 2x"
+              media="(max-width:767px)"
+            />
+            <img
+              src="./img/restaurant/hero/mobile/image5_sm@1x.jpg"
+              alt="Restaurant photo 1"
+              width="436"
+              loading="lazy"
+            />
+          </picture>
+          </di>
+          <di>
+             <picture>
+              <source
+              srcset="
+                img/restaurant/hero/desktop/image6_lg@1x.jpg 1x,
+                img/restaurant/hero/desktop/image6_lg@2x.jpg 2x
+              "
+              media="(min-width:1440px)"
+            />
+  
+            <source
+              srcset="
+                img/restaurant/hero/tablet/image6_md@1x.jpg 1x,
+                img/restaurant/hero/tablet/image6_md@2x.jpg 2x
+              "
+              media="(min-width:768px)"
+            />
+                <source
+              srcset="./img/restaurant/hero/mobile/image6_sm@2x.jpg 2x"
+              media="(max-width:767px)"
+            />
+            <img
+              src="./img/restaurant/hero/mobile/image6_sm@1x.jpg"
+              alt="Restaurant photo 1"
+              width="436"
+              loading="lazy"
+            />
+          </picture>
+          </di>
+  
+        </div> -->
+        <!-- <div class="swiper-btn">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div> -->
+      </div>
+      
+        <p class="paragraph rest-hero-text">Whether you're in the mood for a hearty breakfast, a light lunch,<span class="rest-hero-text-italic">or a romantic dinner</span> our menu has something for everyone.</p>
+    
+      </div>
+
+
+</section>
+
+      <section class="section about-kitchen-section">
+  <div class="container">
+    <h2 class="visually-hidden">About a kitchen</h2>
+    <ul class="about-kitchen-img-flex">
+      <li>
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="
+              ./img/restaurant/about-kitchen/desktop/image3_lg@1x.jpg1x,
+              ./img/restaurant/about-kitchen/desktop/image3_lg@2x.jpg   2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/team-test/assets/image3_md@1x-08413f1a.jpg 1x, /team-test/assets/image3_md@2x-9659abf1.jpg 2x"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/team-test/assets/image3_sm@1x-a001c885.jpg 1x, /team-test/assets/image3_sm@2x-f4369552.jpg 2x"
+          />
+          <img
+            src="/team-test/assets/image3_sm@1x-a001c885.jpg"
+            width="335"
+            height="443"
+            alt="cooking meet"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+      <li>
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="
+              ./img/restaurant/about-kitchen/desktop/image1_lg@1x.jpg1x,
+              ./img/restaurant/about-kitchen/desktop/image1_lg@2x.jpg   2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/team-test/assets/image1_md@1x-14da8802.jpg 1x, /team-test/assets/image1_md@2x-f475b3c1.jpg 2x"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/team-test/assets/image1_sm@1x-7c3b9d1e.jpg 1x, /team-test/assets/image1_sm@2x-e7ad9a17.jpg 2x"
+          />
+          <img
+            src="/team-test/assets/image1_sm@1x-7c3b9d1e.jpg"
+            width="158"
+            height="149"
+            alt="meat"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+      <li>
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="/team-test/assets/image2_lg@1x-7e335c69.jpg 1x, /team-test/assets/image2_lg@2x-ef325509.jpg 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/team-test/assets/image2_md@1x-6b296855.jpg 1x, /team-test/assets/image2_md@2x-c79ce181.jpg 2x"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/team-test/assets/image2_sm@1x-fa044847.jpg 1x, /team-test/assets/image2_sm@2x-3e52314f.jpg 2x"
+          />
+          <img
+            src="/team-test/assets/image2_sm@1x-fa044847.jpg"
+            width="157"
+            height="149"
+            alt="expert seasoning"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+    </ul>
+    <ul class="about-kitchen-text-flex">
+      <li>
+        <p class="paragraph about-kitchen-paragraph">
+          At Mimino, we are experts in
+          <span class="about-kitchen-paragraph-italic">meat preparation.</span>
+          Our chefs use only the finest and freshest ingredients to
+          <span class="about-kitchen-paragraph-italic"
+            >create delicious dishes</span
+          >
+          that showcase the flavors of premium cuts of meat.
+        </p>
+      </li>
+      <li>
+        <p class="paragraph about-kitchen-paragraph">
+          Our
+          <span class="about-kitchen-paragraph-italic"
+            >slow-cooking process</span
+          >
+          and expert seasoning bring out the best in each dish, making for an
+          unforgettable dining experience. Come taste the magic of
+          <span class="about-kitchen-paragraph-italic"
+            >meat preparation at</span
+          >
+          Mimino.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="rest-menu-section section">
+  <div class="rest-menu-container container">
+    <h2 class="rest-menu-title title">RESTAURANT MENU</h2>
+
+    <ul class="rest-menu-common-list">
+      <li class="rest-menu-common-item">
+        <!-- <div class="rest-menu-thumb"> -->
+        <h3 class="rest-menu-subtitle subtitle">Hot meals</h3>
+        <ul class="rest-menu-list">
+          <li class="rest-menu-item">
+            <div class="rest-menu-dish-wrapper">
+              <b class="rest-menu-dish">Veal borscht with beans</b>
+              <p class="rest-menu-descr">
+                Veal, potatoes, cabbage, carrots, onions, beans, garlic,
+                tomatoes, greens, sour cream
+              </p>
+            </div>
+            <div class="rest-menu-price-wrapper">
+              <p class="rest-menu-weight">400 g</p>
+              <p class="rest-menu-price">240 UAH</p>
+            </div>
+          </li>
+          <li class="rest-menu-item">
+            <div class="rest-menu-dish-wrapper">
+              <b class="rest-menu-dish">Cheese soup with chicken</b>
+              <p class="rest-menu-descr">
+                Chicken, potatoes, carrots, onions, mushrooms, soft cheese,
+                greens
+              </p>
+            </div>
+            <div class="rest-menu-price-wrapper">
+              <p class="rest-menu-weight">400 g</p>
+              <p class="rest-menu-price">200 UAH</p>
+            </div>
+          </li>
+          <li class="rest-menu-item">
+            <div class="rest-menu-dish-wrapper">
+              <b class="rest-menu-dish">Carbonara pasta</b>
+              <p class="rest-menu-descr">
+                Tagliatelle pasta, bacon, cream, Parmesan cheese, egg, greens
+              </p>
+            </div>
+            <div class="rest-menu-price-wrapper">
+              <p class="rest-menu-weight">400 g</p>
+              <p class="rest-menu-price">430 UAH</p>
+            </div>
+          </li>
+          <li class="rest-menu-item">
+            <div class="rest-menu-dish-wrapper">
+              <b class="rest-menu-dish">Pork steak</b>
+              <p class="rest-menu-descr">
+                Pork tenderloin, spices, served with sweet chili sauce and
+                vegetables
+              </p>
+            </div>
+            <div class="rest-menu-price-wrapper">
+              <p class="rest-menu-weight">400 g</p>
+              <p class="rest-menu-price">500 UAH</p>
+            </div>
+          </li>
+          <li class="rest-menu-item">
+            <div class="rest-menu-dish-wrapper">
+              <b class="rest-menu-dish">Gorbusha in white wine sauce</b>
+              <p class="rest-menu-descr">
+                Tender redfish, cream sauce based on white wine
+              </p>
+            </div>
+            <div class="rest-menu-price-wrapper">
+              <p class="rest-menu-weight">400 g</p>
+              <p class="rest-menu-price">400 UAH</p>
+            </div>
+          </li>
+        </ul>
+        <!-- </div> -->
+      </li>
+      <li class="rest-menu-common-item">
+        <!-- <div class="rest-menu-thumb"> -->
+        <h3 class="rest-menu-subtitle subtitle">Side dishes and snacks</h3>
+        <ul class="rest-menu-list">
+          <li class="rest-menu-item">
+            <div class="rest-menu-dish-wrapper">
+              <b class="rest-menu-dish">Baked vegetables</b>
+              <p class="rest-menu-descr">Zucchini, pepper, tomato, eggplant</p>
+            </div>
+            <div class="rest-menu-price-wrapper">
+              <p class="rest-menu-weight">200 g</p>
+              <p class="rest-menu-price">230 UAH</p>
+            </div>
+          </li>
+          <li class="rest-menu-item">
+            <div class="rest-menu-dish-wrapper">
+              <b class="rest-menu-dish">French fries</b>
+              <p class="rest-menu-descr">Potatoes, tomato sauce</p>
+            </div>
+            <div class="rest-menu-price-wrapper">
+              <p class="rest-menu-weight">150 g</p>
+              <p class="rest-menu-price">160 UAH</p>
+            </div>
+          </li>
+          <li class="rest-menu-item">
+            <div class="rest-menu-dish-wrapper">
+              <b class="rest-menu-dish">Peasant-style potatoes</b>
+              <p class="rest-menu-descr">Potatoes, spices, spicy sauces</p>
+            </div>
+            <div class="rest-menu-price-wrapper">
+              <p class="rest-menu-weight">150 g</p>
+              <p class="rest-menu-price">160 UAH</p>
+            </div>
+          </li>
+          <li class="rest-menu-item">
+            <div class="rest-menu-dish-wrapper">
+              <b class="rest-menu-dish">Crisp pickles from the barrel</b>
+              <p class="rest-menu-descr">
+                Salted cucumber, pickled tomato, sauerkraut, Korean carrot
+              </p>
+            </div>
+            <div class="rest-menu-price-wrapper">
+              <p class="rest-menu-weight">250 g</p>
+              <p class="rest-menu-price">350 UAH</p>
+            </div>
+          </li>
+          <li class="rest-menu-item">
+            <div class="rest-menu-dish-wrapper">
+              <b class="rest-menu-dish">Chicken wings in honey sauce</b>
+              <p class="rest-menu-descr">
+                Chicken wings, mustard-honey sauce, served with carrots, celery
+                and blue cheese sauce
+              </p>
+            </div>
+            <div class="rest-menu-price-wrapper">
+              <p class="rest-menu-weight">400 g</p>
+              <p class="rest-menu-price">350 UAH</p>
+            </div>
+          </li>
+        </ul>
+        <!-- </div> -->
+      </li>
+      <li class="rest-menu-common-item">
+        <!-- <div class="rest-menu-thumb"> -->
+        <h3 class="rest-menu-subtitle subtitle">Salads</h3>
+        <ul class="rest-menu-list">
+          <li class="rest-menu-item">
+            <div class="rest-menu-dish-wrapper">
+              <b class="rest-menu-dish">Caesar with chicken</b>
+              <p class="rest-menu-descr">
+                Chicken fillet, lettuce, cherry tomatoes, Parmesan cheese,
+                croutons, Caesar sauce
+              </p>
+            </div>
+            <div class="rest-menu-price-wrapper">
+              <p class="rest-menu-weight">230 g</p>
+              <p class="rest-menu-price">450 UAH</p>
+            </div>
+          </li>
+          <li class="rest-menu-item">
+            <div class="rest-menu-dish-wrapper">
+              <b class="rest-menu-dish">Caesar with shrimp</b>
+              <p class="rest-menu-descr">
+                Tiger shrimp, lettuce, cherry tomatoes, parmesan cheese,
+                croutons, caesar sauce
+              </p>
+            </div>
+            <div class="rest-menu-price-wrapper">
+              <p class="rest-menu-weight">230 g</p>
+              <p class="rest-menu-price">300 UAH</p>
+            </div>
+          </li>
+          <li class="rest-menu-item">
+            <div class="rest-menu-dish-wrapper">
+              <b class="rest-menu-dish">Greek salad</b>
+              <p class="rest-menu-descr">
+                Fresh cucumber, tomato, bell pepper, olives, brynza cheese,
+                lettuce, sauce
+              </p>
+            </div>
+            <div class="rest-menu-price-wrapper">
+              <p class="rest-menu-weight">230 g</p>
+              <p class="rest-menu-price">280 UAH</p>
+            </div>
+          </li>
+          <li class="rest-menu-item">
+            <div class="rest-menu-dish-wrapper">
+              <b class="rest-menu-dish">Meat salad</b>
+              <p class="rest-menu-descr">
+                Chicken fillet or pork tenderloin, fresh cucumber, tomato, bell
+                pepper, ranch sauce
+              </p>
+            </div>
+            <div class="rest-menu-price-wrapper">
+              <p class="rest-menu-weight">230 g</p>
+              <p class="rest-menu-price">300 UAH</p>
+            </div>
+          </li>
+        </ul>
+        <!-- </div> -->
+      </li>
+      <li class="rest-menu-common-item">
+        <ul class="rest-menu-drinks-list">
+          <li class="rest-menu-drinks-item">
+            <!-- <div class="rest-menu-thumb"> -->
+            <h3 class="rest-menu-subtitle subtitle">Desserts</h3>
+            <ul class="rest-menu-list">
+              <li class="rest-menu-item">
+                <div class="rest-menu-dish-wrapper">
+                  <b class="rest-menu-dish">Napoleon cake</b>
+                </div>
+                <div class="rest-menu-price-wrapper">
+                  <p class="rest-menu-price">200 UAH</p>
+                </div>
+              </li>
+              <li class="rest-menu-item">
+                <div class="rest-menu-dish-wrapper">
+                  <b class="rest-menu-dish">Poppy cake</b>
+                </div>
+                <div class="rest-menu-price-wrapper">
+                  <p class="rest-menu-price">300 UAH</p>
+                </div>
+              </li>
+              <li class="rest-menu-item">
+                <div class="rest-menu-dish-wrapper">
+                  <b class="rest-menu-dish">Tiramisu</b>
+                </div>
+                <div class="rest-menu-price-wrapper">
+                  <p class="rest-menu-price">260 UAH</p>
+                </div>
+              </li>
+            </ul>
+            <!-- </div> -->
+          </li>
+          <li class="rest-menu-drinks-item">
+            <!-- <div class="rest-menu-thumb"> -->
+            <h3 class="rest-menu-subtitle subtitle">Drinks</h3>
+            <ul class="rest-menu-list">
+              <li class="rest-menu-item">
+                <div class="rest-menu-dish-wrapper">
+                  <b class="rest-menu-dish">Black/green tea</b>
+                </div>
+                <div class="rest-menu-price-wrapper">
+                  <p class="rest-menu-price">100 UAH</p>
+                </div>
+              </li>
+              <li class="rest-menu-item">
+                <div class="rest-menu-dish-wrapper">
+                  <b class="rest-menu-dish">Espresso</b>
+                </div>
+                <div class="rest-menu-price-wrapper">
+                  <p class="rest-menu-price">100 UAH</p>
+                </div>
+              </li>
+              <li class="rest-menu-item">
+                <div class="rest-menu-dish-wrapper">
+                  <b class="rest-menu-dish">Cappuccino</b>
+                </div>
+                <div class="rest-menu-price-wrapper">
+                  <p class="rest-menu-price">100 UAH</p>
+                </div>
+              </li>
+            </ul>
+            <!-- </div> -->
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <button class="rest-menu-slide-btn btn"></button>
+
+    <button class="rest-menu-btn btn" type="button">book a table</button>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer section">
+  <div class="container footer-page">
+    <div class="nav-footer">
+      <nav class="">
+        <ul class="list-footer list">
+          <li class="footer-items">
+            <a class="link-footer link" href="./index.html">HOME</a>
+          </li>
+          <li>
+            <a class="link-footer link" href="./hotel.html">HOTEL</a>
+          </li>
+          <li>
+            <a class="link-footer link" href="./restaurant.html">RESTAURANT</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="logotip">
+      <a class="logo-footer" href="./index.html">
+        <span class="name-logo">MIMINO</span>
+        <span class="text-logo">restaurant-hotel complex</span>
+      </a>
+    </div>
+
+    <div>
+      <ul class="media-list list">
+        <li class="media-item">
+          <a
+            class="link"
+            href="https://www.instagram.com"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener norefrrer"
+          >
+            <svg class="socials-icon" width="20" height="20">
+              <use href="/team-test/assets/icons-1d48267b.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="media-item">
+          <a
+            class="link"
+            href="https://www.facebook.com"
+            aria-label="Facebook"
+            target="_blank"
+            rel="noopener norefrrer"
+          >
+            <svg class="socials-icon" width="20" height="20">
+              <use href="/team-test/assets/icons-1d48267b.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="media-item">
+          <a
+            class="link"
+            href="https://twitter.com"
+            aria-label="Twitter"
+            target="_blank"
+            rel="noopener norefrrer"
+          >
+            <svg class="socials-icon" width="20" height="20">
+              <use href="/team-test/assets/icons-1d48267b.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="line-footer"></div>
+</footer>
+
+  
+  
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+ 
+  </body>
+</html>
