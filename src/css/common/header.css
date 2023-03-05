@@ -79,7 +79,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  background-image: url(../img/svg/menu-mob.svg);
+  background-image: url(/img/svg/menu-mob.svg);
   width: 28px;
   height: 28px;
 }
@@ -114,7 +114,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  background-image: url(../img/svg/x-close.svg);
+  background-image: url(/img/svg/x-close.svg);
   width: 32px;
   height: 32px;
 }
